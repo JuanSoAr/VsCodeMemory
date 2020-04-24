@@ -1,0 +1,12 @@
+#include "garbagecollector.h"
+
+template <typename T>
+GarbageCollector<T>::GarbageCollector()
+{
+    
+}
+
+template<class T>
+GarbageCollector<T> &GarbageCollector<T>::getInstance()
+{
+}
