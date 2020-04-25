@@ -3,6 +3,8 @@
 
 #include "VsCodeMemory_global.h"
 
+//"Aqui tiene que ir el hilo"
+
 class VSCODEMEMORY_EXPORT VsCodeMemory
 {
 public:

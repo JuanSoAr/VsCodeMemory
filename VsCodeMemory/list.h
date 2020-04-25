@@ -17,8 +17,10 @@ private:
 public:
     List();
     Node<T> getFirst();
+    Node<T> getNodo(T UUID);
     void addLast(T data);
     void deleteUUID(T UUID);
+    bool exists(T UUID);
     void printList();
 };
 

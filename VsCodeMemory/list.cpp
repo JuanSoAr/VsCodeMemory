@@ -11,6 +11,21 @@ Node<T> List<T>::getFirst()
 {
     return *this->first;
 }
+
+template<class T>
+Node<T> List<T>::getNodo(T UUID){
+    Node<T> *present = this->first;
+    while (present != nullptr) {
+        if(present->getValue() == UUID)
+            return present;
+        else{
+            present = present->next;
+        }
+    }
+   exit(1);
+}
+
+
 template<typename  T>
 void List<T>::addLast(T data)
 {
@@ -43,6 +58,19 @@ void List<T>::deleteUUID(T UUID)
         temp1->next = temp2->next;
         delete aux;
     }
+}
+
+template<class T>
+bool List<T>::exists(T UUID){
+        Node<T> *present = this->first;
+        while (present != nullptr) {
+            if(present->getValue() == UUID)
+                return true;
+            else{
+                present = present->next;
+            }
+        }
+       exit(1);
 }
 
 template<typename  T>

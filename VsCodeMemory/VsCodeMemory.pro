@@ -18,6 +18,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     garbagecollector.cpp \
+    generateuuid.cpp \
     list.cpp \
     node.cpp \
     vscodememory.cpp \
@@ -26,6 +27,7 @@ SOURCES += \
 HEADERS += \
     VsCodeMemory_global.h \
     garbagecollector.h \
+    generateuuid.h \
     list.h \
     node.h \
     vscodememory.h \

@@ -14,9 +14,15 @@ class GarbageCollector
 {
 private:
     List<VsPointer<T>> Garbage;
-public:
     GarbageCollector();
-
+    static GarbageCollector *instance;
+public:
+    static GarbageCollector &getInstance();
+    void deleteVsPointer(T UUID);
+    void addList(T VsPtr);
+    void changeValue(T value,T UUID);
+    void changeUUIDMemory(T UUID1,T UUID2);
+    void treet();
 };
 
 #endif // GARBAGECOLLECTOR_H

@@ -20,7 +20,11 @@ public:
     int getUUID();
     int getBytes();
     int getMemoryAddress();
+    int getReference();
     void setValue(T value);
+    void setReference();
+    void setUUID(int UUID);
+    void setMemoryAdress(int memoryAddress);
 };
 
 #endif // VSPOINTER_H

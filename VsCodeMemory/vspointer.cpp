@@ -3,6 +3,7 @@
 template <typename T>
 VsPointer<T>::VsPointer()
 {
+    this->memoryAddress = *this->value;
 
 }
 
