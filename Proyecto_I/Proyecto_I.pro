@@ -17,11 +17,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    garbagecollector.cpp \
+    list.cpp \
+    node.cpp \
     proyecto_i.cpp \
     vsptr.cpp
 
 HEADERS += \
     Proyecto_I_global.h \
+    garbagecollector.h \
+    list.h \
+    node.h \
     proyecto_i.h \
     vsptr.h
 
